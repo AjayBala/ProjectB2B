@@ -1,0 +1,32 @@
+.addUserFormWrap{
+    .form-group{
+        margin-bottom: 0px;
+    }
+    .floatLabelWrap .labelTxt{
+        color: #A8C6DF !important;
+    }
+    .labelActive .floatLabelWrap .labelTxt {
+        transform: translateY(-12px);
+        font-size: 11px;
+    }
+    .labelActive .multiSelectDropdown .ui.selection.dropdown {
+        margin-top: 6px;
+        padding-top: 9px;
+    }
+    .multiSelectDropdown .ui.multiple.search.dropdown > input.search{
+        margin-bottom: 0px;
+        color: #2C405A;
+    }
+}
+
+.profileBtn.CancelBtn {
+    background-color:transparent;
+    color: #2C405A;
+    margin:5px;
+    border: 1px solid #8DABC4;
+}
+.profileBtn.AddBtn{
+    background-color:#40B630;
+    margin:5px;
+    border: 1px solid #40B630;
+}

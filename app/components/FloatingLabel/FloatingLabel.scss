@@ -1,0 +1,205 @@
+/********************************/
+@import "../../Style.scss";
+
+.errorBorder {
+    // margin-bottom: 9px !important;
+    label{
+        > input{
+            border-color:#f00 !important;
+        }
+    }
+}
+
+.error_text{
+    @extend %fullWrap;
+    @include titleHev(12px, #e74b24, 16px );
+    margin-top: 5px;
+    padding-left: 5px;
+    text-align: left;
+}
+#hideTextBox{ display: none;}
+
+.floatLabelWrap{  
+    @extend %fullWrap; 
+    @include borderRadius(4px);
+    // @include marginTopBottom(10px);
+    height: 44px;
+    border: 1px solid #DADCDF;
+    background-color: #F9FAFB;	
+    position: relative;
+    font-family:  "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    
+    .inputTxtStyle{
+      @include borderRadius(0px);
+      border:0px;
+      background-color: transparent;
+      height: 42px;
+      position: relative;
+      z-index: 1;
+      padding: 5px 10px;
+      // padding-top: 20px;
+      color: #1C1C1C;
+      font-family:  "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+      transition: all .2s ease-out;
+    }
+  
+    .labelTxt{
+      @include paddingAll(10px);
+      @include titleHev(16px, #939393, 22px );
+      position: absolute;
+      margin-bottom: 0px;
+      left:0px;
+      z-index: 0;
+      transform: translateY(0px);
+      transition: all .2s ease-out;
+    }
+  
+  }  
+
+  .iconInfo{
+    position: absolute;
+    right: 10px;
+    top:12px;
+    z-index: 1;
+  }
+
+  .iconInfo > div {
+    color: #ECF5FD !important;
+  }
+  
+  .labelActive {
+    .floatLabelWrap{
+      .labelTxt { 
+        transform: translateY(-8px);
+        font-size: 11px;
+      }
+      .inputTxtStyle{
+        padding-top: 18px;
+      }
+    } 
+  }
+   
+  .floatLabelWrap.errorBorder{
+    border: 1px solid #e74b24;
+  }
+
+  // .signupFormWrap .floatLabelWrap input[type=password] + * + .error_text{
+  //   display: none;
+  // }
+
+  // .signupFormWrap .confirmPwdBox .floatLabelWrap input[type=password] + * + .error_text{
+  //   display: block;
+  // }
+  .DashboardRightSideWrap{
+    .floatLabelWrap{
+      border:0px;
+      border-bottom: 1px solid #DADCDF;
+      background-color: #fff;
+      border-radius: 0px;
+    }
+    .floatLabelWrap.errorBorder {
+      border:0px;
+      border-bottom: 1px solid #e74b24;
+    }
+  }
+
+  .server_error_text{
+    @extend %fullWrap;
+    @include titleHev(12px, #e74b24, 16px );
+    @include borderRadius(3px);
+    // margin-top: 5px;
+    // padding: 10px;
+    text-align: left;
+    // background: #faf2f2;
+    position: relative;
+    top: -28px;
+    word-break: break-word;
+}
+
+.tooltip.bottom .tooltip-arrow{
+  top: -4px;
+  border-bottom-color: #fff;
+}
+.tooltip-inner{
+  max-width: 300px;
+  text-align: justify;
+}
+
+.iconWarning, .iconRight{ 
+  position: absolute;
+  right: 10px;
+  top: 12px;
+  z-index: 9;
+  color:#f00; font-size: 20px; display: none;
+}
+.iconWarning{
+  cursor: pointer;
+}
+.iconRight{
+  color: #4ECE3D;
+  display: block;
+}
+.errorBorder{
+  .iconWarning{display: block;}
+}
+
+.server_error_wrap{
+  .iconWarning{display: block;}
+}
+
+.iconWarning + .error_text {
+  background-color: #FF151F;
+  color: #fff;
+  padding: 6px 10px;
+  position: absolute;
+  right: 6px;
+  top: 35px;
+  max-width: 92%;
+  border-radius: 3px;
+  transition: all .2s ease-out;
+  opacity: 0;
+}
+.iconWarning:hover + .error_text{
+  opacity: 1;
+  z-index: 1;
+}
+
+.iconWarning + .error_text:before {
+  content: "";
+  border-bottom: 7px solid #ff151f;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  /* width: 7px; */
+  position: absolute;
+  right: 9px;
+  top: -7px;
+}
+
+.iconWarning + .error_text + .iconInfo{
+  right: 40px;
+}
+
+.labelActive{
+  .floatLabelWrap {
+    input[name=emailId]{
+      display: block;
+    }
+  }
+}
+
+.DashboardRightSideWrap {
+  .floatLabelWrap:focus-within {
+    border-bottom: 1px solid #0093EE;
+  }
+}
+
+#successBorder.floatLabelWrap{
+  border-color: #4ECE3D;
+}
+
+#successBorder.floatLabelWrap.errorBorder{
+  border: 1px solid #e74b24;
+  .iconRight{
+    display: none;
+  }
+}

@@ -1,0 +1,26 @@
+.profPicContainer {
+    text-align: center;
+}
+#fileUploadClick {
+    color: #0093EE;
+}
+#fileUploadClick:hover {
+    color:#0a5a88;
+    cursor: pointer;
+}
+
+.profPicContainer img {
+    border-radius: 50%;
+    margin-bottom: 5px;
+}
+.profileAvatar {
+    border-radius: 50%;
+    background-color: #8DABC4;
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+}

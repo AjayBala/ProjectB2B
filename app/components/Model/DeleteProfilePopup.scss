@@ -1,0 +1,89 @@
+@import "../../Style.scss";
+
+.deleteProfile{
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: #ECF5FD;
+    @extend %font-helvetica;
+}
+
+.deleteProfileMidContentWrap{
+    font-size: 14px;
+    color: #ECF5FD;
+    line-height: 17px;
+    letter-spacing: .5px;
+    text-align: justify;
+    font-weight: 300;
+    padding-top: 20px;
+    @extend %font-helvetica-neue;
+
+}
+
+.deleteProfileButtonWrap{
+    background-color: #2C405A;
+    color: #FAFBFC;
+    border: 1px solid #FAFBFC;
+    height: 44px;
+    width: 161px;
+    text-align: center;
+    border-radius: 4px;
+}
+
+.formdeleteProfileLeftBtn{
+    @extend %fullWrap; 
+    @include marginTopBottom(10px);
+    position: relative;
+    left: 25px;
+    button {
+        background-color: #FF151F;
+        color: #FAFBFC;
+    }    
+}
+
+.formdeleteProfileRightBtn{
+    @extend %fullWrap; 
+    @include marginTopBottom(10px);
+    position: relative;
+    padding-left: 50px;
+    right: 50px;
+    button {
+        background-color: #2C405A;
+        color: #FAFBFC;
+        border: 1px solid #FAFBFC;
+    }    
+}
+
+#newUserPopUp {
+    display: table !important;
+    width: 100%;
+    min-height: 100vh;
+    .modal-dialog {
+        display: table-cell;
+        vertical-align: middle;
+        width: 100%;
+    }
+    .modal-content {
+    background-color: #2C405A;
+    }
+}
+
+.popUpBodyStyles {
+    padding: 60px;
+    padding-bottom: 0px;
+}
+
+.icon-color-change {
+    color: #ECF5FD;
+}
+.non-admin-cancel-btn {
+    margin: 10px 0px;
+    position: relative;
+    padding-left: 200px !important;
+    padding-top: 15px !important;
+    right: 50px;
+}
+
+.delete-pop-up-btn-align {
+    @include paddingAll(25px);
+}

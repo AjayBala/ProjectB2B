@@ -1,0 +1,86 @@
+{"data": {
+    "businessId" : 1,
+    "totalUsers" : 10,
+    "totalGroups": 3,
+    "usersInfo" : [
+        {
+            "id" : 2,
+            "firstName" : "John",
+            "lastName": "Alex",
+            "fullName" : "John Alex",
+            "profileImageId": "12345",
+            "email": "john@mail.com",
+            "roleType" : "Admin",
+            "signupStage" : 3,
+            "group": [{
+                "groupId" : 1,
+                "groupName" : "Tech Team"
+            },
+            {
+                "groupId" : 2,
+                "groupName" : "HR Team"
+            }]
+        },
+        {
+            "id" : 3,
+            "firstName" : "James",
+            "lastName": "Smith",
+            "fullName" : "James Smith",
+            "profileImageId": "12345",
+            "email": "James@mail.com",
+            "roleType" : "Contributor",
+            "signupStage" : 4,
+            "group": [{
+                "groupId" : 1,
+                "groupName" : "Procruement"
+            },
+            {
+                "groupId" : 2,
+                "groupName" : "Procruement | Dallas"
+            },
+            {
+                "groupId" : 5,
+                "groupName" : "HR Team"
+            }]
+        },{
+            "id" : 4,
+            "firstName" : "John",
+            "lastName": "Alex",
+            "fullName" : "John Alex",
+            "profileImageId": "12345",
+            "email": "john@mail.com",
+            "roleType" : "Admin",
+            "signupStage" : 3,
+            "group": []
+        },
+        {
+            "id" : 5,
+            "firstName" : "Robert",
+            "lastName": "kim",
+            "email": "Robert @mail.com",
+            "roleType" : "Admin",
+            "groupId" : 1,
+            "signupStage" : 0,
+            "group": [{
+                "groupId" : 1,
+                "groupName" : "Tech Team"
+            },
+            {
+                "groupId" : 2,
+                "groupName" : "HR Team"
+            }]
+        },
+        {
+            "id" : 6,
+            "firstName" : "Maria",
+            "lastName": "joseph",
+            "email": "Maria @mail.com",
+            "roleType" : "Contributor",
+            "signupStage" : 0,
+            "group": [{
+                "groupId" : 3,
+                "groupName" : "Tech Team|SLC"
+            }]
+        }]
+    }
+}

@@ -1,0 +1,110 @@
+{
+    "userGroups" : [{
+        "groupId" : 1,
+        "groupName" : "Procurement",
+        "users" : [
+            {
+                "id" : 1,
+                "firstName" : "John",
+                "lastName": "Alex",
+                "fullName" : "John Alex",
+                "email": "johna@company.com",
+                "roleType" : "Admin"
+            },
+            {
+                "id" : 2,
+                "firstName" : "John",
+                "lastName": "Thomas",
+                "fullName" : "John Thomas",
+                "email": "johnt@company.com",
+                "roleType" : "Contributor"
+            }
+        ],
+        "userGroups" : [{
+            "groupId" : 6,
+            "groupName" : "Dallas",
+            "users" : [
+                {
+                    "id" : 1,
+                    "firstName" : "John",
+                    "lastName": "Alex",
+                    "fullName" : "John Alex",
+                    "email": "johna@company.com",
+                    "roleType" : "Admin"
+                },
+                {
+                    "id" : 2,
+                    "firstName" : "John",
+                    "lastName": "Thomas",
+                    "fullName" : "John Thomas",
+                    "email": "johnt@company.com",
+                    "roleType" : "Contributor"
+                }
+            ]},
+            {
+            "groupId" : 7,
+            "groupName" : "SLC",
+            "users" : [
+                {
+                    "id" : 1,
+                    "firstName" : "John",
+                    "lastName": "Alex",
+                    "fullName" : "John Alex",
+                    "email": "johna@company.com",
+                    "roleType" : "Admin"
+                },
+                {
+                    "id" : 2,
+                    "firstName" : "John",
+                    "lastName": "Thomas",
+                    "fullName" : "John Thomas",
+                    "email": "johnt@company.com",
+                    "roleType" : "Contributor"
+                }
+            ]}
+        ]},
+    {
+        "groupId" : 2,
+        "groupName" : "HR",
+        "users" : [
+            {
+                "id" : 3,
+                "firstName" : "John",
+                "lastName": "Alex",
+                "fullName" : "John Alex",
+                "email": "johna@company.com",
+                "roleType" : "Admin"
+            },
+            {
+                "id" : 4,
+                "firstName" : "John",
+                "lastName": "Thomas",
+                "fullName" : "John Thomas",
+                "email": "johnt@company.com",
+                "roleType" : "Contributor"
+            }
+        ],
+        "userGroups" : [{
+            "groupId" : 6,
+            "groupName" : "Dallas",
+            "users" : [
+                {
+                    "id" : 1,
+                    "firstName" : "John",
+                    "lastName": "Alex",
+                    "fullName" : "John Alex",
+                    "email": "johna@company.com",
+                    "roleType" : "Admin"
+                },
+                {
+                    "id" : 2,
+                    "firstName" : "John",
+                    "lastName": "Thomas",
+                    "fullName" : "John Thomas",
+                    "email": "johnt@company.com",
+                    "roleType" : "Contributor"
+                }
+            ]}
+        ]
+    }]
+ }

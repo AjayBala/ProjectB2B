@@ -1,0 +1,25 @@
+{
+  "otpNumber": "123456",
+  "otpphoneNumber": 1234567890,
+  "Name":"John Doe",
+  "Email":"John@gmail.com",
+  "AccountType":"Admin",
+  "ProfilePassword":"********",
+  "companyName":"OSTK",
+  "companyEmail":"ofs@gmail.com",
+  "ein":"81-51654165",
+  "Names":[
+    "Jane Doe",
+    "Jon Doe"
+],
+"Role":[
+    "Admin",
+    "Contributor"
+],
+"Group":[
+    "Maintenance",
+    "Tech Team",
+    "Procurement"
+] 
+}
+          

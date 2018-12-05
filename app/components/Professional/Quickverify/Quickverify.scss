@@ -1,0 +1,71 @@
+.pagewrap{width:40%; height: auto; margin-left:33%; margin-top:5%;   }
+.Quickpagewrap{margin-left:-120px;width:120%;}
+.expyear{margin-top:8.0%;}
+.Formpagewrap{ margin-left:2%;padding: 45px;width:70%;height: 61vh;}
+.skipOption{float: right; margin-top:-28px;}
+.pointer {cursor: pointer;}
+.chkwordings{width:20px;}
+.backbutton,.nextbutton{   width:40%;margin-left:7%;color: black;}
+label {font-weight: 400;}
+.nextbutton{background-color:#a6a6a6;color:white;}
+.backbutton, .nextbutton:hover{  list-style-type: none;}
+.backbutton{opacity: 0.4;color:white;}
+.SqaureText{border-radius: 0%;background-color:whitesmoke;}
+.expmonth{padding-right:0px;}
+.expyear{padding-left:0px;}
+@media only screen and (max-width: 767px) {
+        .expmonth{
+            max-width:96%
+         }
+         .expyear{
+            padding-left:15px;    
+         }
+     }
+
+.expyear input[type=number]::-webkit-inner-spin-button, .expyear  input[type=number]::-webkit-outer-spin-button { -webkit-appearance: none; margin: 0; }
+.zip  input[type=text]::-webkit-inner-spin-button, .zip input[type=text]::-webkit-outer-spin-button { -webkit-appearance: none; margin: 0; }
+
+.QuickVerifyWrap {
+    width: 100%;
+    max-width: 787px;
+    margin: 30px auto;
+    font-size: 16px;
+    line-height: 40px;
+}
+
+.QuickVerifyOutterWrap{    
+    width: 100%;
+    float: left;
+    padding: 35px 0px;
+}
+.get-verified-quicker {	
+    color: #ECF5FD;
+    font-size: 18px;
+}
+.business-credit-card {	
+    color: #ECF5FD;	
+    font-size: 14px;	
+}
+.back-btn {
+    background-color: #2C405A;
+    color: #ECF5FD;
+    margin-bottom: 10px;
+}
+.back-btn:hover {
+    background-color: #2C405A;
+}
+
+.QuickVerifyOutterWrap .floatLabelWrap{ 
+    background-color: #1C293B;
+    .inputTxtStyle {
+        color: #FAFBFC;
+    }
+}
+
+.QuickVerifyOutterWrap {
+    .floatLabelWrap .labelTxt { 
+        color:#fff;
+        font-weight: normal;
+        opacity: 0.6;
+    }
+}

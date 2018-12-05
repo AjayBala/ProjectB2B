@@ -1,0 +1,83 @@
+@import "../../../Style.scss";
+
+.containInnerWrap{ 
+    @extend %fullWrap; 
+    @include marginTopBottom(80px);
+}
+.title_h1{
+    @include titleHev(24px,#496580, 30px);
+    @include paddingTopBottom(20px);
+    letter-spacing: 0px;
+    text-align: center;
+}
+
+.Login_ConfirmCodeVerify{ 
+    @include paddingAll(2px);
+}
+
+.loginBoxWrap{ width:90%; max-width: 362px; margin: 0px auto ; padding: 40px 0px;}
+.loginBox{ 
+    @extend %fullWrap; 
+    @include paddingAll(30px);
+    @include borderRadius(3px);
+    margin-bottom: 50px;
+}
+.loginBox form { @extend %fullWrap;  }
+
+.labelTxt_2{ @include titleHev(14px,#222, 20px); font-weight: normal; } 
+.new {width:40px}
+.loginBox .form-control{ box-shadow: inherit; border:0px; background-color: #f1f1f1; height: 38px;}
+
+.Login_RequestNewCode{margin-top: -5px}
+
+.btnSignIn{ 
+    @extend %fullWrap;
+    @include borderRadius(3px);
+    @include paddingTopBottom(10px);
+    @include titleHev(14px,#fff, 20px);
+    margin-top: 15px; 
+    border:1px solid #9b9b9b;
+    background: #1e377a;
+    cursor: pointer;
+   
+}
+
+.btnSignIn:hover{ background-color: #777;   }
+.forgotTxt{
+    @extend %fullWrap;
+    text-align: center; 
+    padding-top: 20px;
+}
+
+.rememberDevice { @include paddingAll(10px); }
+
+.requestCode {text-align: center; color:#0485CC;font-size: 14px }
+.invalidOtp{color:red}
+
+.phonenumberBox{
+    width:100%; 
+    max-width: 300px;
+    margin: 20px auto;
+    text-align: center;
+    margin-bottom: 50px;
+    li{
+        display: inline-block;
+        padding: 0px 3px;
+    }
+    li:last-child(){
+        width:100%;
+        padding-left:10px; 
+    }
+    .form-group{
+        margin-bottom: 0px;
+    }
+}
+
+.requestNewCode{width: 100%;max-width: 483px;font-size: 12px;text-align: center;}
+
+.customPhoneField{
+    .error_text{
+        position: absolute;
+        left: 0px;
+    }
+}

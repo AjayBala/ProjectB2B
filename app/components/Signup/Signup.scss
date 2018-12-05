@@ -1,0 +1,273 @@
+/*******************************/
+@import "../../Style.scss";
+
+.bgStyle{
+    @extend %fullWrap;
+    background-image: url(https://ak1.ostkcdn.com/img/mxc/b2b/B2B%20Background@.png);
+    background-size: cover;
+    min-height: calc(100vh - 258px);
+    background-repeat: no-repeat;
+    padding-bottom: 70px;
+}
+
+.bannerTitle_1{ 
+  @extend %fullWrap;
+  @extend %textAlignCenter;
+  @include paddingAll(10px);
+  @include titleHevNeu(46px, #fff, 60px);
+  @include marginTopBottom(20px);
+} 
+
+.formWrap{
+  @extend %fullWrap;
+  @include paddingAll(10px);
+
+  form{
+    @extend %fullWrap;
+  }
+}
+
+.createAccBtn{
+  @extend %fullWrap;
+  @extend %btnBlueStyle;
+  @include borderRadius(2px);
+  outline: none;
+  &:hover{
+    background-color: #333;
+    color: #fff;
+  }
+  &:active{
+    background-color: #333;
+    color: #fff;
+  }
+  &:focus{
+    background-color: #034078;
+    color: #fff;
+  }
+  &:visited{
+    background-color:#333;
+    color: #fff;
+  }
+  &:disabled{ 
+    opacity: 0.6; 
+  }
+  &:disabled:hover{ 
+    background-color: #034078;
+    opacity: 0.6;
+    color: #fff;
+  }
+}
+
+.signInTxt{
+  @include paraHev_fluid(14px, #000, 22px);
+  @include paddingAll(0px);
+  @include marginAll(0px);
+  @extend %fullWrap;
+  @extend %textAlignCenter;
+  padding-top: 0px;
+  a:hover{ 
+    color:#ff1f2c; 
+    text-decoration: none;
+  }
+}
+
+.tablewrap{
+  @extend %fullWrap;
+  @extend %right;
+  margin-top:60px;
+  max-width: 480px;
+  table{
+    @extend %fullWrap;
+
+    th, td {
+      @include paraHev_fluid(12px, #444, 20px);
+      background-color: white;
+      border: 0.1px solid #a6a6d3;
+      border-collapse: collapse; 
+      width: 100%;
+      padding: 6px 10px;
+      float: none;
+      
+    }
+  }
+  .arrowColHead{ 
+    position: relative;
+    &:before{ 
+      position: absolute; 
+      content: ""; 
+      left:0px; 
+      top: 53px;
+      width: 0;
+      height: 0;
+      border-left: 49px solid transparent;
+      border-right: 48px solid transparent;
+      border-top: 20px solid #034078;
+    }
+  }
+}
+
+.tick{
+  @include tick(red);
+}
+.tick1{
+  @include tick(blue);
+}
+.cross{
+  &:before {
+    content: "\2717";
+    color: gray;
+    font-weight:bolder;
+  }
+}
+
+.bnrFormOutWrap{
+  @extend %fullWrap; 
+  background-color: #fafbfc;
+  @include paddingAll(20px);
+  max-width: 550px;
+  min-height: 440px;
+  .signupTitle_1{
+    @include paraHev_fluid(18px, #000, 22px);
+    @include paddingAll(5px);
+    @extend %centerAlignWrap;
+    margin-bottom: 10px;
+  }
+}
+
+.SignTabWrap{
+  @extend %fullWrap; 
+  @include paddingLeftRight(10px);
+  .SignTabHeadWrap{
+    @extend %fullWrap;
+    padding-left: 10px;
+
+    .SignTabHead {
+      @include paraHev_fluid(14px, #ccc , 20px);
+      width:48.83%;
+      float: left;
+      text-align: center;
+      cursor: pointer;
+      &:first-child{
+        text-align: left;
+      }
+      &:last-child{
+        text-align: right;
+      }
+      span{
+        display: inline-block;
+        padding-bottom: 5px;
+      }
+    }
+    .SignTabHead.react-tabs__tab--selected{
+      span{
+        padding-bottom: 3px;
+        color: #4A90E2;
+        border-bottom:2px solid #4A90E2;
+      }
+    }
+  }
+}
+
+.label-styles {
+  @extend %fullWrap; 
+  @include titleHev(14px, #4A4A4A, 30px);
+  font-weight: normal;
+}
+
+.formRowWrap{
+  .label-styles { line-height: 18px; }
+}
+
+.checkbox-overrides {
+  @extend %font-helvetica;
+  font-weight: 300px;
+  color: #4A4A4A;
+  font-size: 12px;
+  line-height: 22px;
+  vertical-align: top;
+}
+
+.checkbox-labelStyle {
+  padding-left: 5px;
+}
+
+#passwordCriteriaBox {
+  @extend %fullWrap;
+  display: none;
+  padding:0px;
+  margin: -8px 0px 10px 0px; 
+  font-size: 14px;
+  text-align: left;
+  p{
+    color: grey;
+  }
+  .valid {
+    color: #4A90E2;
+  }
+  .errorClass {
+    color: red;
+  }
+ }
+
+/* when condiotions met */
+.valid {
+  color: #4A90E2;
+}
+
+.valid:before {
+  position: relative;
+  left: -35px;
+  }
+
+/* when no condiotions met */
+.invalid {
+  color: grey;
+}
+
+.invalid:before {
+  position: relative;
+  left: -35px;
+  // content: "✔";
+}
+
+.errorClass {
+  color: red;
+}
+
+.govEmailTxtWrap{
+  @extend %fullWrap;
+  position: relative;
+  padding: 0px;
+  padding-left: 18px;
+  input[type=checkbox]{
+    position: absolute;
+    left: 0px;
+    top:0px;
+  }
+  label{
+    @extend %fullWrap;
+  }
+}
+
+// %mediaFullWrap{ @extend %fullWrap }
+@media only screen and (min-width:300px) and (max-width:1024px) {
+  .bannerEqualWrap{
+    >div {
+      text-align: center;
+      .bnrFormOutWrap, .landing-notification{
+        /*eslint-disable */
+        float: none !important;
+        display: inline-block;
+        text-align: left;
+      }
+    }
+    .equalWrapFormSection, .notification-outter-wrap {
+      width:100%;
+      float: left;
+    }
+  }
+}
+
+.hideError{
+  .error_text{ display: none;}
+}

@@ -1,0 +1,11 @@
+.MenuBurgerIcon{
+    display: none;
+}
+
+@media only screen and (min-width:300px) and (max-width:640px)
+{
+    #dashboardHeaderWrap .mainLogoWrap {
+       width:100%;
+    }
+    
+}

@@ -1,0 +1,31 @@
+@import "../../../Style.scss";
+
+.twostep_auth_wrap {
+    text-align: left;
+    width:100%; float: left;
+    padding: 10px 30px;
+    box-sizing: border-box;
+    font-family:  "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    font-size: 14px;
+    line-height: 30px;
+    color: #888;
+    span{
+        float: left;
+        margin-right: 10px;
+    }
+    a{
+        color: #034078;
+        border: 1px solid #0272A2;	
+        background-color: rgba(4,133,204,0.06);
+        float: left;
+        width:80%;
+        padding: 0px 20px;
+        box-sizing: border-box;
+        @include borderRadius(30px);
+    }
+}
+
+.bgStyle {
+    width: 100%;
+    float: left;
+}

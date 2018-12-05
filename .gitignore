@@ -1,0 +1,18 @@
+# dependencies
+/node_modules
+/.history
+
+# testing
+/coverage
+
+# production
+/dist
+
+# files
+package-lock.json
+
+
+# misc
+/.vscode
+
+

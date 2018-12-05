@@ -1,0 +1,63 @@
+.labelActive {
+    .multiSelectDropdown .ui.selection.dropdown
+    {
+        margin-top:18px;
+    }
+}
+
+.multiSelectDropdown{
+    height:auto !important;
+    .active.visible.ui.selection.dropdown{
+        margin-top:18px;
+    }
+    .ui.selection.dropdown { 
+        background: transparent;
+        border:0px;
+        position: relative;
+        z-index: 10;
+        margin-top:4px;
+    }
+    .ui.multiple.dropdown>.label{
+        text-align: left;
+        font-size: 12px;
+        font-weight: normal;
+        background-color: #d4d4d4;
+        box-shadow: none;
+        -webkit-box-shadow: none;
+    }
+    .labelTxt{
+        top:0px;
+    }
+    .ui.multiple.search.dropdown>input.search{ width:28px; color:#fff;}
+    .active.visible + .labelTxt{
+        transform: translateY(-8px);
+        font-size: 11px;
+    }
+    .error_text{
+        position: absolute;
+    }
+    
+}
+
+#initialValuesActive .multiSelectDropdown .ui.selection.dropdown {
+    margin-top: 18px;
+}
+
+#initialValuesActive .floatLabelWrap .labelTxt {
+    transform: translateY(-8px);
+    font-size: 11px;
+}
+input.inputTxtStyle::selection {
+    background-color: #0967f3;
+    color: #fff;
+}
+
+#multiSelectDropdown + .iconInfo { z-index: 5; right: 30px;}
+.ui.fluid.dropdown>.dropdown.icon{ color:#fff;}
+
+.multiSelectDropdown .iconInfo {
+    z-index: 12;
+}
+#multiSelectDropdown .iconWarning {
+    z-index: 11;
+}

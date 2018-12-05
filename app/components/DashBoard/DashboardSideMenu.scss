@@ -1,0 +1,190 @@
+@import '../../Style.scss';
+
+.menuInnerWrapper {
+  padding-left: 12px;
+}
+// .menuItemList {
+//   padding: 17px;
+//   border-bottom: 1px solid white;
+//   color: white
+// }
+.mainOutterWrap{
+  overflow: hidden;
+}
+#mainWrap {
+  position: relative !important;
+  z-index: 3 !important;
+} 
+a, a:hover {
+  color: inherit;
+}
+
+/****************/
+.LeftSideMenuWrap{ 
+  width: 226px;
+  float: left;
+  height: calc(100vh - 132px);
+  background: #1C293B;
+  // overflow-y: auto;
+  position: absolute;
+  left: -180px;
+  top: 0px;
+  transition:all 0.5s linear;
+  -webkit-transition:all 0.5s linear;
+  z-index: 100;
+}
+.LeftSideProfileWrap{
+  @extend %fullWrap;
+  background-color: #AFB3BA;
+  padding: 35px 20px;
+  .ProfileTitleWrap{
+    @extend %fullWrap;
+    position: relative;
+    padding-left: 52px;
+    .profilePhoto{
+      width:45px;
+      height: 45px;
+      text-align: center;
+      line-height: 45px;
+      background-color: #fff;
+      @include borderRadius(100%);
+      overflow: hidden;
+      position: absolute;
+      left: 0px;
+      top:0px;
+      i{
+        font-size: 36px;
+        line-height: 45px;
+        color:#AFB3BA;
+      }
+    }
+    .ProfileNameWrap{
+      @extend %fullWrap;
+      margin-top: 3px;
+      .ProfileUserNameTxt{
+        @include titleHev(14px, #fff, 20px);
+      }
+      .ProfileCompanyNameTxt{
+        @include titleHevNeu_B(14px, #fff, 20px);
+      }
+      
+    }
+
+  }
+}
+
+
+.MenuBurgerIcon{ float:right; 
+  width:30px; 
+  transition:all 0.5s linear;
+  -webkit-transition:all 0.5s linear; 
+  cursor:pointer; 
+  box-sizing:border-box;
+  z-index:9999;
+  position: absolute;
+  // right: -13px;
+  // top: 8px;
+  right: 7px;
+  top: -33px;
+}
+.MenuBurgerIcon > p{float:left;background:#fff;height:2px;margin:2px 0px;width:24px;border-radius:3px;-webkit-border-radius:3px;}
+.MenuBurgerIcon > p{transition:transform 0.5s, opacity 0.5s;-webkit-transition:-webkit-transform 0.5s, opacity 0.5s;}
+
+
+.DashboardSideMenuListWrap{
+  @extend %fullWrap;
+  li{
+    @extend %fullWrap;
+    border-left:6px solid #1c293b;
+    padding-left:12px;
+    border-bottom: 2px solid rgba(255,255,255,0.5);
+    a{
+      @extend %fullWrap;
+      @include paddingAll(20px);
+      padding-left:30px;
+      position: relative;
+      color: #fff;
+      font-size: 0px;
+      > *{
+        position: absolute;
+        right: 16px;
+        top: 20px;
+        font-size: 26px;
+        color: #fff;
+      }
+    }
+    &:hover{
+      border-left-color:#fff;
+      background-color:rgba(255,255,255,0.20); 
+    }
+  }
+  .active{
+    border-left-color:#fff;
+    background-color:rgba(255,255,255,0.20); 
+  }
+}
+.DashboardOutterWrap{
+  @extend %fullWrap;
+  position: relative;
+  padding-left: 46px;
+  transition:all 0.5s linear;
+  -webkit-transition:all 0.5s linear; 
+}
+.DashboardRightSideWrap{
+  @extend %fullWrap;
+  background-color: #f1f1f1;
+  transition:all 0.5s linear;
+  -webkit-transition:all 0.5s linear;
+  min-height: calc(100vh - 128px);
+}
+#MenuActived {
+  padding-left: 226px;
+  .LeftSideMenuWrap{
+    left:0px;
+  }
+  .MenuBurgerIcon{
+    right:-180px;
+  }
+  // .MenuBurgerIcon > p:first-child{position:relative;top:18px;transform:rotate(45deg); width:18px;}
+  // .MenuBurgerIcon > p:nth-child(2){opacity:0;}
+  // .MenuBurgerIcon > p:last-child{position:relative;top:-6px;transform:rotate(-45deg); width:18px;}
+  .DashboardSideMenuListWrap{
+    li{
+      a{
+        font-size: 14px;
+        > *{
+          left: 0px;
+          right: inherit;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width:300px) and (max-width:640px)
+{
+  #MenuActived {
+    padding-left: 46px;
+    .LeftSideMenuWrap{
+      left:-180px;
+    }
+    .MenuBurgerIcon{
+      right:7px;
+      display: block;
+    }
+    // .MenuBurgerIcon > p:first-child{position:relative;top:18px;transform:rotate(45deg); width:18px;}
+    // .MenuBurgerIcon > p:nth-child(2){opacity:0;}
+    // .MenuBurgerIcon > p:last-child{position:relative;top:-6px;transform:rotate(-45deg); width:18px;}
+    .DashboardSideMenuListWrap{
+      li{
+        a{
+          font-size: 14px;
+          > *{
+            left: inherit;
+            right:16px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,59 @@
+@import "../../Style.scss";
+@import "./Model.scss";
+
+.deleteUserButtonWrap{
+    @include titleHev(14px, #4a4a4a, 17px ); 
+    background-color: #E7E8EA;
+    height: 44px;
+    width: 161px;
+    text-align: center;
+    border-radius: 4px;
+    border: 0px;
+}
+
+.deleteUserMidContentWrap{
+    @include titleHev(18px, #4a4a4a, 22px );
+}
+
+.deleteUserHeaderWrap{
+    @include titleHev(20px, #4a4a4a, 24px );
+    text-align: center;
+    color: white;
+}
+
+.userNameStyles {
+    @include titleHev(18px, #4a4a4a, 22px );
+}
+
+.userEmailStyles {
+    @include titleHev(14px, #4a4a4a, 17px );
+}
+
+.deleteUserWrap form{
+padding: 81px;
+}
+
+h1.deleteUserHeaderWrap {
+    color:white;
+}
+.deleteUserButtonWrap.cancelBtn {
+    background-color: white;
+    color: #0093EE;
+}
+.deleteUserButtonWrap.rmvBtn {
+    background-color: red;
+    color: white;
+}
+
+.deleteBtnWrap{
+    .close{
+        color: white;
+        opacity: 1 !important;
+    }
+}
+.remove-group-popup{
+    div > .modal-content {
+        margin: 39% auto 0px !important;
+        background-color: #2C405A;
+   }
+} 

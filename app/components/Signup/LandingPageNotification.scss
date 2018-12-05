@@ -1,0 +1,62 @@
+@import '../../Style.scss';    
+
+.landing-notification {
+    max-width: 650px;
+    padding:35px;
+    @extend %fullWrap;
+    @extend %right;
+    background-color: #fafbfc;
+    margin-top:50px;
+
+    .landing-notif-header {
+        @extend %fullWrap;
+        text-align: center;
+        @include titleHevNeu(38px, #2C405A, 30px);
+        letter-spacing: 0px;
+        font-weight: 600;
+        padding: 10px 0px;
+        border-bottom: 2px solid #2C405A;
+        span {
+            font-weight: normal;
+            font-size: 18px;
+            font-family: 'helvetica-regular','Helvetica Neue',Helvetica,Arial,sans-serif;
+        }
+        padding-bottom: 20px;
+    }
+
+    .landing-notif-message {
+        @extend %fullWrap;
+        text-align: center;
+        margin-top:20px;
+        @include titleHevNeu(14px, #1C293B, 18px);
+        a {
+            color: #0093EE;
+        }
+    }
+
+    .landing-notif-benefits {
+        font-weight: 300;
+        line-height: 1px;
+    }
+
+    .landing-notif-buttons {
+        .btn-default {
+            width: 116px;
+            color: #0093EE;
+            border-color: #0093EE;
+            margin-right: 6px;
+            background-color: #ecf5fd;
+            &:hover {
+                background-color: #0093ee;
+                color: #FAFBFC;
+            }
+            &:focus {
+                background-color: #0079c4;
+                color: #FAFBFC;
+            }
+        }
+    }
+}
+
+
+

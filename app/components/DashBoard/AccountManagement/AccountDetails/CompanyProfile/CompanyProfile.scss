@@ -1,0 +1,187 @@
+
+@import "../../../../../Style.scss";
+
+.HeaderTxt_ComBu{@include titleHev(20px,#4A4A4A, 30px);@include paddingTopBottom(20px);letter-spacing: 0px;}
+
+
+
+i.fa.fa-building.userIcon {
+    font-size: 50px;
+}
+
+.file.fileSpace {
+    margin-top: 0px;
+}
+
+.addFileButton{
+
+    max-width: 120px;
+}
+
+.addBtnComProfile{    border-radius: 2px;
+    cursor: pointer;
+    height: 34px;
+    line-height: 34px;
+    max-width: 332px;
+    width: 100%;
+    margin: 0px 13px;
+    background-color: #AFB3BA;
+    color: white;
+    display: inline-block;
+    box-sizing: border-box;
+    border: 0px;
+    margin-top: 8px;}
+
+.saveBtn {
+    background-color: black;
+
+}
+
+.einField {
+    margin-top: 70px;
+}
+
+.reSaleCertification {
+    background-color:#E7E8EA;
+    padding-top: 12px;
+    margin-top:5px;
+}
+
+.deactivateAccount {
+    text-align: center;
+    cursor: pointer;
+    color: #939393;
+}
+
+.saveBtnComProfile {
+    background-color: #0093EE;
+}
+
+.formBtnComProfile {
+    border-radius: 4px;
+    cursor: pointer;
+    height: 34px;
+    line-height: 34px;
+    width: 160px;
+    // margin: 0px 30px;
+    background-color: #0093EE;
+    color: white;
+    display: inline-block;
+    box-sizing: border-box;
+    border: 0px;
+}
+
+.formBtnComProfile:disabled {
+    background-color: #C5D9E8;
+    border: 1px #0079C4 solid;
+    opacity: 0.6;
+    color: #0079C4;
+}
+
+.companyProfileInnerTxtWrap{
+
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1250px;
+}
+
+.companyProfileInnerLeftTxtWrap{
+    width: 100%;
+    float: left;
+    max-width: 400px;
+}
+
+.companyProfFileuploadbuton {
+    padding: 0px 40px 40px;
+    text-align: center;
+    margin-top: 8px;
+}
+.companyProfFileuploadbuton .file {
+    margin: 0px;
+    position: relative;
+    height: 30px;
+}
+.fileUpload{
+    margin-bottom: 8px;
+}
+.companyProfFileuploadbuton .file > input[type="file"] {
+    width: 10%;
+    padding-top: 5px;
+    padding-left: 0px;
+    position: absolute;
+    opacity: 1;
+    top: 0;
+    left: 10px;
+    right: 0;
+    bottom: 0;
+}
+
+.companyProfFileuploadbuton .file > label {
+    margin: 0px 0px;
+    position: absolute;
+    top: 0;
+    right: 0px;
+    left: 0px;
+    bottom: 0;
+    background-color: #a6a6a6;
+    border: 1px solid #a6a6a6;
+    color: #fff;
+    line-height: 30px;
+    text-align: center;
+    width: 102px;
+    cursor: pointer;
+}
+
+
+
+.uploadBtnWrapper {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    }
+
+.fileUploadButton {
+    font-size: 14px;
+    text-align: center;
+    height: 40px;	width: 333px;
+    color: #AFB3BA;
+    background-color: white;
+    line-height: 17px;
+    border: 1px solid #AFB3BA;
+    margin-top: 8px;
+    border-radius: 0px;
+    margin-left: 14px
+}
+
+.uploadBtnWrapper input[type=file] {
+    font-size: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+}
+
+.alert-banner-error {
+    text-align: center;
+    background-color: #FF151F;
+    p { 
+        color: #FAFBFC
+    }
+    .close {
+        color: black;
+    }
+}
+
+.serverErrorBanner{
+    position: absolute;
+    left: 226px;
+    top: 57px;
+    border: 0px;
+    border-radius: 0px;
+    width: calc(100% - 226px);
+    box-shadow: inset 0px 2px 4px rgba(0,0,0,0.3);
+}
+
+.manage_title{
+    padding-left: 20px;
+}

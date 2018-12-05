@@ -1,0 +1,54 @@
+@import "../../Style.scss";
+
+.modal-header-styles {
+    background-color:#f9fafb;
+    border: none;	
+    color: #4A4A4A;		
+    font-size: 18px;	
+    line-height: 22px;	
+    text-align: center;
+}
+
+.modal-button-styles {
+    height: 37px;	
+    width: 161px;	
+    border-radius: 4px;	
+    background-color: #E7E8EA;
+    margin-right: 5px;
+}
+
+.modal-footer-styles {
+    text-align: center;
+    border: none;
+    margin: 30px;
+}
+
+.modal-body-styles {
+    color: #4A4A4A;
+    font-size: 17px;	
+    font-weight: 300;	
+    line-height: 22px;
+    margin: 18px 45px;
+}
+
+.customPopupWrap { 
+    display: block; 
+    top: 50%; 
+    left: 50%; 
+    bottom: inherit; 
+    right: inherit; 
+    transform: translate(-50%, -50%);
+}
+
+.modal-content { 
+    width:100%; 
+    float: left; 
+    padding: 20px;
+}
+
+.delete-modal-body-styles {
+    text-align: center;
+    margin-bottom: 46px;
+    @include titleHevNeu(20px, #4A4A4A, 24px);
+    font-weight: bold;
+}

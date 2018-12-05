@@ -1,0 +1,7 @@
+{
+        "id": 1,
+        "name": "Jane Doe",
+        "email": "janedoe@overstock.com",
+        "role": "Admin",
+        "group": "Maintenance"
+}

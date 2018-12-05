@@ -1,0 +1,4 @@
+
+insert into d2prod.DD_DYNAMIC_PATH(DPA_PATH,DPA_STA_ID,DPA_STATIC_PAGE_REDIRECT,DPA_ID) values ('opro',98693,'F',19308);
+
+commit;

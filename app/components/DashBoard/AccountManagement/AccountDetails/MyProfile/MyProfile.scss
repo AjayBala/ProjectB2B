@@ -1,0 +1,136 @@
+@import "../../../../../Style.scss";
+
+.HeaderTxt_ComBu{@include titleHev(20px,#232C3D, 23px);@include paddingTopBottom(20px);letter-spacing: 0px; /*margin-left: -20px;*/ color: #232C3D !important; font-weight: normal;}
+.myProfileFormWrap{width: 100%;float: left;padding: 2px 0px; text-align: left;}
+.HeaderTxt_MyProfile{font-weight: 100};
+.myProfileRightContentWrap{margin-left: -20px}
+.myProfileRightContentWrapText{@include titleHevNeu(18px,#4A4A4A, 16px)}
+.controlBtnWrap {
+  width:100%;
+  float: left;
+  text-align: center;
+}
+.removeProfileButton {
+  font-family: 'helvetica-neue',Helvetica,Arial,sans-serif;
+  font-size: 14px; 
+  line-height: 15px;
+  letter-spacing: 1px;
+  width: 180px;
+  padding: 10px 0px;
+  display: inline-block;
+  color: #8DABC4 !important;
+  margin: 0px 10px;
+}
+.myProfileFormBtn{@extend %font-helvetica;border-radius: 2px;cursor: pointer;height: 34px;line-height: 34px;max-width: 348px;width:100%;margin: 0px 5px;background-color: #7b7b7b;color: white;display: inline-block;box-sizing: border-box;border: 0px;}
+.myProfileFormBtn:disabled{ opacity: 0.6;}
+.myProfileFormBtn:hover{ background-color: #555; }
+
+i.fa.fa-user-circle.userIcon {
+    font-size: 50px;
+}
+
+i.fa.fa-toggle-on.profileToggle {
+    font-size: 30px;
+}
+
+.file.fileSpace {
+    margin-top: 0px;
+}
+.accountHeadClass li{
+    max-width: 400px;
+}
+
+.saveBtn {
+    background-color: black;
+
+}
+
+i.fa.fa-user-circle.pwdeye {
+    font-size: 1px;
+
+}
+.react-switch {    
+    float: right;     
+      }
+      
+      #passwordCriteriaBox {
+        display: none;
+        padding: 15px 0px;
+        font-size: 14px;
+        text-align: left;
+        p{
+          color: grey;
+        }
+        .valid {
+          color: #4A90E2;
+        }
+        .errorClass {
+          color: red;
+        }
+       }
+      
+      /* when condiotions met */
+      .valid {
+        color: #4A90E2;
+      }
+      
+      .valid:before {
+        position: relative;
+        left: -35px;
+        }
+      
+      /* when no conditions met */
+      .invalid {
+        color: grey;
+      }
+      
+      .invalid:before {
+        position: relative;
+        left: -35px;
+        // content: "✔";
+      }
+      
+      .errorClass {
+        color: red;
+      }
+ 
+    
+    .form-control-feedback {
+      pointer-events: auto
+    }
+
+    .eyeIconWrap{ position: absolute; right:5px; top: 10px; cursor: pointer; z-index: 3;}
+ 
+    .nameWrap {
+      padding-left: 0px;
+    }
+    .subHeadings {
+      font-weight: bold;
+      color: #1C293B;
+    }
+    
+    .DashboardRightSideWrap {
+      .floatLabelWrap {
+        .inputTxtStyle{
+          font-weight: normal;
+          color:rgba(28, 41, 59, 0.8);
+        }
+        .labelTxt {
+            font-size: 12px;
+            font-weight: bold;
+            color: #1C293B;
+        }
+      }
+    }
+
+    .nonEditableField{
+      .inputTxtStyle{
+        opacity: 0.6;
+      }
+    }
+
+  .myProfileInnerLeftTxtWrap{
+      width: 100%;
+      float: left;
+      max-width: 400px;
+  }

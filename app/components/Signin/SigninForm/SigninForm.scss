@@ -1,0 +1,61 @@
+@import "../../../Style.scss";
+
+.containInnerWrap{ 
+    @extend %fullWrap; 
+    @include marginTopBottom(80px);
+}
+.title_h1{
+    @include titleHev(24px,#496580, 30px);
+    @include paddingTopBottom(20px);
+    letter-spacing: 0px;
+    text-align: center;
+}
+
+.loginBoxWrap{ width:90%; max-width: 362px; margin: 0px auto ; padding: 40px 0px;}
+.loginBox{ 
+    @extend %fullWrap; 
+    @include paddingAll(30px);
+    @include borderRadius(3px);
+    margin-bottom: 50px;
+}
+.loginBox form { @extend %fullWrap;  }
+
+.checkbox-authVerify {
+    @extend %font-helvetica;
+    font-weight: 300px;
+    color: #4A4A4A;
+    font-size: 12px;
+    line-height: 22px;
+    padding-left: 20px;
+  }
+
+
+.labelTxt_2{ @include titleHev(14px,#222, 20px); font-weight: normal; } 
+.loginBox .form-control{ box-shadow: inherit; border:0px; background-color: #f1f1f1; height: 38px; }
+
+.btnSignIn{ 
+    @extend %fullWrap;
+    @include borderRadius(3px);
+    @include paddingTopBottom(10px);
+    @include titleHev(14px,#fff, 20px);
+    margin-top: 15px; 
+    border:1px solid #9b9b9b;
+    background: #1e377a;
+    cursor: pointer;
+   
+}
+.btnSignIn:hover{ background-color: #777;   }
+.forgotTxt{
+    @extend %fullWrap;
+    text-align: center; 
+    padding-top: 20px;
+}
+
+.secureVerifyTxt{
+    font-size:14px;
+    text-align: left; 
+}
+.title_h1.signinTitle.deactive{ display: none;}
+.title_h1.signinTitle{ @include titleHevNeu_B(24px, #4A4A4A, 30px); }
+#CookiesVerifyed > div > input[type=checkbox]{ margin-left: -40px;}
+#CookiesVerifyed{ display: none;}

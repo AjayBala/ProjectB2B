@@ -1,0 +1,58 @@
+#switchContainer div {
+    float: right;
+}
+// .react-switch-bg {
+//     background: #fff;
+//     border: 1px solid #8DABC4;
+// }
+.react-switch-custom .react-switch-bg {
+    height: 28px !important;
+    width: 56px !important;
+    margin: 0px;
+    border-radius: 6px !important;
+}
+
+.react-switch-custom .react-switch-handle {
+    height: 22px !important;
+    width: 22px !important;
+    border-radius: 20% !important;
+    top: 3px !important;
+    right: 32px !important;
+}
+
+
+.react-switch-handle::before, .react-switch-handle::after {
+content: '';
+    width: 3px;
+    height: 10px;
+    position: absolute;
+    left: 8px;
+    top: 6px;
+    background: #40B630;
+    border-radius: 2px;
+
+}
+
+.react-switch-handle[aria-checked="false"]::before, .react-switch-handle[aria-checked="false"]::after {
+    background: #8DABC4 !important;
+}
+
+
+
+.react-switch-handle::after{
+    left: 12px;
+    color: #FFFFFF
+}
+
+// /* frame bkg */
+
+// position: absolute;
+// left: 0%;
+// right: 0%;
+// top: 0%;
+// bottom: 0%;
+
+// /* text/body--grey */
+// border: 1px solid #8DABC4;
+// box-sizing: border-box;
+// border-radius: 6px;

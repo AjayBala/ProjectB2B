@@ -1,0 +1,88 @@
+@import "../../../Style.scss";
+
+
+
+.SqaureText {
+    border-radius: 0%
+}
+
+.logoWrap{  padding: 10px; @extend %fullWrap;@extend%textAlignCenter;}
+
+/*.container{
+    width:47%;
+    height: 80vh;
+    margin-left:33%;
+    margin-top:5%; 
+}*/
+.Formpagewrap{   
+    margin-left:2%;
+    padding: 45px;
+    width:68%;
+    height: 61vh;
+}
+.Formbuttonwrap{ 
+    margin-left: 35%;
+    margin-top:10%;
+}
+.phonetextwrap{
+
+    margin-top:5%;
+}
+.zip  input[type=number]::-webkit-inner-spin-button, .zip input[type=number]::-webkit-outer-spin-button { -webkit-appearance: none; -moz-appearance: none; margin: 0; }
+.number input[type=number]::-webkit-inner-spin-button, .zip input[type=number]::-webkit-outer-spin-button { -webkit-appearance: none; -moz-appearance: none; margin: 0; }
+input[type=number] {
+    -moz-appearance:textfield;
+}
+
+.GovHeaderTxtWrap{@include titleHev(28px,#2F3337, 30px);margin:30px auto 40px auto; text-align: center;}
+
+.GovHeaderTxtWrap b{font-weight: 500}
+
+.customRadioBtn{margin: 58px 0px;}
+
+.customPhoneBoxWrap{margin-bottom: auto}
+
+.errorPhnTxt{@include borderRadius(3px);@include titleHevNeu_B(12px, #D8000C, 20px );width: auto;background-color: #FFBABA;position: absolute; right: -10px; top: 35px; padding: 5px 14px;border-radius: 3px; z-index: 1; min-width: 78px;
+    &:before{ 
+        position: absolute; content: ''; 
+        border-bottom: 6px solid #FFBABA; 
+        border-left:6px solid transparent; 
+        border-right:6px solid transparent; 
+        right: 10px; top: -6px; 
+    }
+}
+
+.formTextTitle{ 
+    @extend %fullWrap;
+    @include titleHevNeu_B(22px, #FAFBFC, 30px );
+    text-align: center;
+    margin-bottom: 60px;
+    &:first-child{
+        margin-bottom: 60px;
+    }
+}
+.govt-check-box-info {
+    color: #ECF5FD;
+}
+
+.formOutterWrap .ui.selection.dropdown .menu>.item {
+    border: none;
+    color: white;
+    background-color: #1C293B;
+}
+@media only screen and (min-width:300px) and (max-width:400px)
+{
+    .floatLabelWrap .labelTxt {
+       font-size: 12px;
+    }
+    .govt-check-box-info .control-label{
+        font-size: 13px;
+    }
+}
+.CheckboxText {
+    float: left;
+    margin-top: 1px;
+}
+.govt-check-box-info .checkBoxStyle{
+    float: left;
+}

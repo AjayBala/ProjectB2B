@@ -1,0 +1,40 @@
+/********************************/
+@import "../../Style.scss";
+
+footer{  @extend %fullWrap; background-color: #1c293b; @include paddingAll(15px); /*padding-bottom: 40px;*/}
+#footerWrap{ /*width:96%;*/ margin: 0 auto; max-width: 1600px;}
+#footerWrap .footerNav_1 { float: right;}
+#footerWrap .footerNav_1 li{ float: left;}
+#footerWrap .footerNav_1 li a{ float: left; color:#fff; font-size: 13px; line-height: 20px;}
+#footerWrap .footerNav_1 li a:hover{ float: left; color:#eee; background-color: transparent;}
+#footerWrap .footerNav_2 {  background-color: transparent; }
+.vl{ border-left: 1px solid black; height: 22px;margin-left: 190px;margin-top: -18px}
+.footerline{display: inline;color: black;padding-right: 0px;}
+
+.copyRightsText{ float: left; color: #fff; line-height: 40px; font-size: 13px;}
+.flagWrap{
+    background: url(https://ak1.ostkcdn.com/img/mxc/20150407_intl_flags.png) no-repeat 0 0;
+    display: block;
+    position: relative;
+    width: 28px;
+    height: 15px;
+    float: right;
+    clear: right;
+    margin-right: 10px;
+    background-position: -348px -16px;
+}
+
+@media only screen and (min-width:300px) and (max-width:1023px)
+{
+    .copyRightsText{
+        width: 100%;
+        text-align: center;
+    }
+    #footerWrap .footerNav_1 { width:100%; text-align: center;
+        li{
+            float: none;
+            display: inline-block;
+        }
+    }
+
+}

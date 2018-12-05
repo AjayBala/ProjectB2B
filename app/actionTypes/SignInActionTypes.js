@@ -1,0 +1,6 @@
+export const SIGN_IN_REQUEST = 'SIGN_IN_REQUEST';
+export const SIGN_IN_SUCCESS = 'SIGN_IN_SUCCESS';
+export const SIGN_IN_ERROR = 'SIGN_IN_ERROR';
+
+export const GET_EMAILID_TYPE = 'GET_EMAILID';
+export const SET_SIDEMENUSTATE = 'STORE_SIDEMENU_STATE';

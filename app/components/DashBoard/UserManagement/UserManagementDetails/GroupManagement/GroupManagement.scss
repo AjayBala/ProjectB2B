@@ -1,0 +1,193 @@
+@import "../../../../../Style.scss";
+
+.groupWrap {
+    display: flex;
+        flex: 1;
+    flex-direction: column;
+}
+.react-tabs__tab-panel {
+    padding: 0px !important;
+}
+.headerName {
+    @include titleHevNeu(22px,#2C405A, 27px);
+    font-weight: bold;
+    padding: 15px;
+    display: flex;
+    flex:1;
+    cursor: pointer;
+}
+.headerName .nameBlock, .subHeaderName .nameBlock {
+    display: flex;
+    flex: 1;
+    align-items: flex-start;
+}
+.headerName .actionsBlock, .subHeaderName .actionsBlock  {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 15px;
+}
+.actionsBlock {
+    float: right;
+}
+.actionsBlock div {
+    justify-content: flex-end !important;
+}
+.subHeaderName {
+    @include titleHevNeu(14px,#0079C4, 17px);
+    font-weight: bold;
+    padding: 15px;
+    display: flex;
+    flex:1;
+    cursor: pointer;    
+}
+
+.subHeaderName .parentGrpName {
+    color: #aaaaaa;
+}
+.userCard {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 72px;
+    padding: 15px;    
+}
+.loggedInUser {
+    border-left: 5px #26C1C9 solid !important;
+    padding-left: 10px !important;
+}
+.userDetailFields {
+    @include titleHevNeu(12px,#2C405A, 14px);
+    flex: 3;
+}
+.editables {
+    color: #0093EE !important;
+    cursor: pointer;
+}
+.iconWrap {
+    flex: 1 !important;
+    text-align: center;
+}
+.dragIcon{
+    width:16px;
+    position: relative;
+    height: 10px;
+    display: inline-block;
+    &:before, &:after{
+        width:100%;
+        content: '';
+        background-color: #A8C6DF;
+        height: 3px;
+        left: 0px;
+        top: 0px;
+        position: absolute;
+    }
+    &:after{
+        top: 6px;
+    }
+ }
+
+.panel-default {
+    border: none !important;
+}
+.panel-body {
+    padding: 0px !important;
+}
+input.formBtn.rmv {
+    color: white;
+    font-size: 10px;
+       background-color: red;
+}
+input.formBtn.add {
+    color: white;
+    background-color: #40B630;
+    font-size: 10px;
+}
+input.formBtn.subgrp {
+    color: white;
+    font-size: 10px;
+    background-color:  #0093EE;
+
+}
+.grpUserDelete {
+    margin-right: 5px;
+    color: red;
+}
+
+.tooltip.top .tooltip-arrow {
+   display: none;
+}
+.tooltip-inner {
+    max-width: 300px;
+    text-align: justify;
+    color: black;
+    text-align: center;
+    background-color: white;
+    }
+
+     i.fa.fa-minus-circle {
+        font-size: 17px;
+    }
+
+.subGroupWrap {
+    .myProfileFormWrap {
+        width: 50%;
+        float: left;
+        margin-top: -20px;
+    }
+
+    .parentGrpName {
+        float: left;
+        color: #aaaaaa;
+        line-height: 17px;
+        letter-spacing: 1px;
+        font-weight: bold;
+    }
+}
+.RmvUserBtn {
+    border: 1px white;
+    background-color: white;
+}
+
+.create-group-box .labelTxt {
+    font-size: 20px !important;
+    font-weight: bold;
+    color: #8DABC4 !important;
+}
+.edit-group-name .inputTxtStyle {
+    color: #2C405A !important;
+    font-size: 20px !important;
+    font-weight: bold !important;
+}
+.add-sub-group .inputTxtStyle{
+    font-size: 15px !important;
+    font-weight: bold !important;
+    color: #0079C4 !important;
+}
+.noGroups {
+    padding: 15px;
+    .headerName {
+        @include titleHevNeu(22px,#2C405A, 27px);
+        font-weight: bold;
+        padding: 0px !important;
+    }
+    .userDetailFields {
+        @include titleHevNeu(14px,#2C405A, 16px);
+    }
+}
+.groupUserProfileViewWrap{
+    width: 100%;
+    display: flex;
+    padding: 20px;
+}
+
+.sub-group-name-label {
+    font-size: 14px;
+    color: #0079C4;
+    line-height: 17px;
+    letter-spacing: 1px;
+    font-weight: bold;
+}

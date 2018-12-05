@@ -1,0 +1,121 @@
+{
+    "parser": "babel-eslint",
+    "extends": ["standard", "standard-react", "eslint:recommended", "airbnb", "eslint-config-airbnb"],
+    "plugins": ["babel", "react", "promise", "import"],
+    "env": {
+        "browser": true,
+        "node": true,
+        "mocha": true,
+        "es6": true
+    },
+    "ecmaFeatures": {
+        "jsx": true,
+        "modules": true
+    },
+    "settings": {
+    "import/parser": "babel-eslint",
+    "import/resolve": {
+      "moduleDirectory": ["node_modules", "app", "app/Utils"]
+    }
+  },
+    "globals": {
+        "describe": true,
+        "before": true,
+        "after": true,
+        "beforeEach": true,
+        "afterEach": true,
+        "it": true,
+        "__SERVER__": true,
+        "__DEVELOPMENT__": true,
+        "__CLIENT__": true,
+        "__DISABLE_SSR__": true,
+        "__DEVTOOLS__": true,
+        "__REACT_PERF__": true,
+        "__PROXY__": true,
+        "__MOCK__": true,
+        "__CRITICAL_CSS_ASSET_NAME__": true,
+        "__CRITICAL_TABDESK_CSS_ASSET_NAME__": true,
+        "__CSS_ASSET_NAME__": true,
+        "__JS_ASSET_NAME__": true,
+        "__CSS_TABDESK_ASSET_NAME__": true,
+        "__JS_TABDESK_ASSET_NAME__": true,
+        "__SERVER_ASSET_NAME__": true,
+        "__FULL_VERSION__": true,
+        "__HOSTNAME__": true,
+        "__LOG_LEVEL__": true,
+        "__BUILD_TYPE__": true,
+        "webpackIsomorphicTools": true
+    },
+    "rules": {
+        "max-statements-per-line": [
+            2,
+            {
+                "max": 1
+            }
+        ],
+        "arrow-body-style": 0,
+        "arrow-parens": ["error", "as-needed", { "requireForBlockBody": false }],
+        "no-console": 0,
+        "curly": ["error", "all"],
+        "semi": [2, "always"],
+        "jsx-a11y/click-events-have-key-events": 0,
+        "jsx-a11y/anchor-is-valid": 0,
+        "jsx-a11y/no-static-element-interactions": 0,
+        "jsx-a11y/no-noninteractive-element-interactions": 0,
+        "jsx-a11y/label-has-for": 0,
+        "comma-dangle": ["error", "only-multiline"],
+        "function-paren-newline": 0,
+        "import/extensions": 0,
+        "import/no-unresolved": 0,
+        "indent": [0, 4, {"SwitchCase": 1}],
+        "max-len": 0,
+        "new-cap": 0,
+        "newline-before-return": 2,
+        "no-debugger": 0,
+        "no-case-declarations": 0,
+        "no-prototype-builtins": 0,
+        "no-restricted-properties": 0,
+        "no-shadow": 0,
+        "no-unneeded-ternary": 0,
+        "no-unused-vars": ["error", { "varsIgnorePattern": "colors", "ignoreRestSiblings": true }],
+        "no-restricted-globals": 0,
+        "prefer-arrow-callback": 0,
+        "prefer-destructuring": 0,
+        "object-curly-newline": 0,
+        "react/forbid-prop-types": 0,
+        "react/jsx-filename-extension": 0,
+        "react/no-multi-comp": 0,
+        "import/prefer-default-export": 0,
+        "react/prefer-stateless-function": 0,
+        "react/jsx-closing-tag-location": 0,
+        "react/jsx-curly-brace-presence": 0,
+        "react/no-array-index-key": 0,
+        "react/require-default-props": 0,
+        "react/jsx-boolean-value": 0,
+        "react/jsx-indent": [2, 4],
+        "react/jsx-indent-props": [2, 4],
+        "react/jsx-uses-react": [2],
+        "react/jsx-uses-vars": [2],
+        "react/react-in-jsx-scope": [2],
+        "react/jsx-closing-bracket-location": [0],
+        "react/jsx-space-before-closing": [0],
+        "react/jsx-tag-spacing": [0],
+        "promise/catch-or-return": [0],
+        "no-script-url": [0],
+        "class-methods-use-this": "off",
+        "no-param-reassign": [0],
+        "no-unused-expressions": [0],
+        "no-underscore-dangle": [0],
+        "space-before-function-paren": [0],
+        "import/no-named-as-default": [0],
+        "import/no-extraneous-dependencies": [0],
+        "linebreak-style": 0,
+        "no-restricted-imports": [
+            "error",
+            {
+                "paths": ["lodash"],
+                "patterns": ["!lodash/*"]
+            }
+        ]
+    }
+}

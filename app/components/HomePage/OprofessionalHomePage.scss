@@ -1,0 +1,177 @@
+@import "../../Style.scss";
+
+.opro-header {
+    @extend %centerAlignWrap;
+    margin-top: 45px;
+    overflow-wrap: break-word;
+    h1 {
+        @include titleHev(54px, #1C293B, 60px);
+        font-weight: bold;
+    }
+}
+
+#opro-home {
+    background-color:#FAFBFC;
+}
+
+.opro-message {
+    text-align: center;
+    margin-top: 12px;
+    width: 100%;
+    max-width: 1600px;
+    p {
+        @include titleHev(30px, #1C293B, 34px);
+    }   
+    .opro-mesg-first {
+        text-align: justify;
+        text-align: center;
+    }
+    .opro-mesg-second {
+        margin-top: 15px;
+    }
+    .opro-discount-style {
+        border: 2px solid #8dabc4;
+        position: relative;
+        max-width: 500px;
+        padding: 38px;
+        margin: 0 auto;
+        background-color: #8dabc4;
+        margin-top: 100px;
+        margin-bottom: 100px;
+        color: white;
+        width: 100%;
+        .formBtn {
+            border: solid 1px white;
+            background-color: #8dabc4;
+            width: 200px;
+        }
+    }
+}
+
+.opro-image-wrap {
+    width: 100%;  
+    max-height: 700px;
+    overflow: hidden;
+    float: left;  
+}
+
+.opro-image {
+    width: 100%;  
+    float: left;  
+    margin-top: -40px;
+}
+
+.start-shopping-button-area .formBtn {
+    background-color: #0079c4;
+    margin-top: 2%;
+    padding: 0px 60px;
+    color: #fff;
+}
+
+.formBtn:visited{
+    color: #fff;
+    text-decoration: none;
+}
+
+.opro-btn-styles {
+    @include centerAlignBoxMaxWidth(480px);
+    @include paddingAll(17px);
+    @include titleHev(18px, #1C293B, 23px);
+    font-weight: 600;
+    float: none;
+}
+
+.opro-shopNow-btn {
+    border: 1px solid #1C293B;
+    background-color: transparent;
+    margin: 26px auto;
+    border-radius: 4px;
+}
+.opro-notif-message {
+    @extend %fullWrap;
+    @include titleHevNeu(16px, #2c405a, 22px);
+    text-align: center;
+    a{
+        color: #0190e9;
+    }
+}
+
+.labelWithIcon{
+    @extend %fullWrap;
+    > div{
+        position: absolute;
+        left: 0px;
+        top:0px;
+    }
+}
+
+.opro-title {
+    h1 {
+        @include titleHev(30px, #1C293B, 37px);
+        font-weight: bolder;
+        margin-top: 40px;
+    }    
+}
+
+.opro-QA {
+    @include titleHev(15px, #1C293B, 22px);
+    font-weight: bold;
+    .opro-section {
+        @extend %font-helvetica;
+        font-size: 20px;
+        color: #2C405A;
+        line-height: 22px;
+        font-weight: bolder;
+        position: absolute;
+        left: 0px;
+        top: -3px;
+    }
+}
+
+.opro-qa-text {
+    @include titleHevNeu(14px, #1C293B, 22px);
+}
+
+.opro-qa-section {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    position: relative;
+    span {
+        margin-left: 25px;
+        display: inline-block;
+        @extend %font-helvetica;
+        font-size: 14px;
+        color: #1C293B;
+    }   
+}
+
+.opro-answer-section {
+    position: relative;
+    span {
+        margin-left: 25px;
+        display: inline-block;
+    }
+}
+
+.opro-answer {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+.feedback-msg {
+    @include titleHev(15px, #1C293B, 22px);
+    margin-top: 13px;
+}
+
+.feedback-btn-style {
+    @include titleHev(18px, #1C293B, 23px);
+    font-weight: bolder;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    .opro-shopNow-btn {
+        margin-top: 45px;
+        margin-bottom: 70px;
+    }
+}

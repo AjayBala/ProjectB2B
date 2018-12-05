@@ -1,0 +1,93 @@
+@import "../../Style.scss";
+
+header{ @extend %fullWrap;
+    background-color: #1C293B;
+}
+#HeaderWrap{ width:96%; margin: 0 auto; max-width: 1600px; padding-top: 10px;}
+#HeaderWrap .mainLogo{ height:36px; float: left; max-width: 100%;
+  padding: 4px 0px;
+}
+
+#HeaderWrap .active-logo {
+  height:36px; 
+  padding-left: 1186%;
+}
+.mainLogoWrap { 
+  @extend %left;
+}
+
+.active-logo-wrap{ 
+  @extend %right;
+}
+
+.HeaderIconWrap {
+    @extend %fullWrap;
+    float:right;
+  }
+  .HeaderIconWrap li {
+    @include marginLeftRight(20px);
+    float: left;
+    color: #ECF5FD;
+  }
+  .HeaderIconWrap li a {
+    float: left;
+    @include paraHev_fluid(18px, #fff, 24px);
+    font-size: 15px;
+    background-color: transparent;
+  }
+  .HeaderIconWrap li{
+    a:hover, a:visited, a:active,  a:focus {
+      background-color: transparent;
+      color: #ECF5FD;
+    }
+  }
+  .HeaderIconWrap li:first-child {
+    margin-left: 0;
+  }
+  .HeaderIconWrap li:first-child a {
+    padding-left: 0;
+  }
+  .HeaderTopMenu {
+      float: right;
+      // padding-right: 150px;
+  }
+
+  @media only screen and (min-width:300px) and (max-width:768px)
+  {
+    .HeaderIconWrap li{ margin: 0px;}
+  }
+
+  @media only screen and (min-width:300px) and (max-width:499px)
+  {
+    .HeaderIconWrap{ 
+      text-align: center;
+      li{
+        float: none;
+        display: inline-block;
+        a{
+          padding: 10px;
+          margin: 0px;
+        }
+      }
+    }
+
+  }
+
+  
+
+#dashboardHeaderWrap{
+  @extend %fullWrap;
+  .mainLogoWrap{
+    padding:15px 10px;
+    float: left;
+    // background-color:#2C405A;
+
+    .mainLogo{
+      height: 28px;
+      float: left;
+      max-width: 100%;
+    }
+  }
+}
+
+
